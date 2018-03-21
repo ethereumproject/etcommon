@@ -23,3 +23,36 @@ Below are all crates provided by the etcommon project.
 As `etcommon` will be depended on many other projects like SputnikVM and EASM, rolling release is necessary to keep up with the development speed.
 
 Note that rolling release will only happen for sub-crates like `etcommon-bigint`, `etcommon-rlp`, `etcommon-util`, etc. The top-level crate `etcommon` will follow the normal release process.
+
+## Usage
+The repositories on crates.io are labeled with the prefix `etcommon-`, however the crates themselves do not have this prefix so you'll need to specify them as `etcommon-PACKAGE = "^0"` in `Cargo.toml` and as `extern crate PACKAGE;` in your `main.rs`
+
+### etcommon-rlp
+Cargo.toml: `etcommon-rlp = "^0"`
+
+main.rs: `extern crate rlp;`
+
+### etcommon-bigint
+Cargo.toml: `etcommon-bigint = "^0"`
+
+main.rs: `extern crate bigint;`
+
+### etcommon-hexutil
+Cargo.toml: `etcommon-hexutil = "^0"`
+
+main.rs: `extern crate hexutil;`
+
+### etcommon-trie
+Cargo.toml: `etcommon-trie = "^0"`
+
+main.rs: `extern crate trie;`
+
+### etcommon-block
+Cargo.toml: `etcommon-block = "^0"`
+
+main.rs: `extern crate block;`
+
+### etcommon-block-core
+Cargo.toml: `etcommon-block-core = "^0"`
+
+main.rs: `extern crate block_core;`
