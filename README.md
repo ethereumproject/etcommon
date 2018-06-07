@@ -1,6 +1,6 @@
 # Etcommon
 
-[![Build Status](https://travis-ci.org/ethereumproject/etcommon-rs.svg?branch=master)](https://travis-ci.org/ethereumproject/etcommon-rs)
+[![Build Status](https://travis-ci.org/ETCDEVTeam/etcommon-rs.svg?branch=master)](https://travis-ci.org/ETCDEVTeam/etcommon-rs)
 
 Apache-2 licensed common Ethereum structs shared by crates. Work-in-progress right now.
 
