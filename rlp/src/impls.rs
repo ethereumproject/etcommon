@@ -216,6 +216,12 @@ impl<'a> Encodable for &'a str {
 	}
 }
 
+impl Encodable for str {
+	fn rlp_append(&self, s: &mut RlpStream) {
+		s.encoder().encode_value(self.as_bytes());
+	}
+}
+
 impl Encodable for String {
 	fn rlp_append(&self, s: &mut RlpStream) {
 		s.encoder().encode_value(self.as_bytes());
